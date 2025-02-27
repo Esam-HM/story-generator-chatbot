@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT Masal</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="left_animals">
+            <img src="./imgs/left_Animals.png" alt="Left Animal">
+        </div>
+        <div id="right_animals">
+            <img src="./imgs/right_animals.png" alt="Right Animal">
+        </div>
+    </div>
+    <div class="container_Mid">
+        <h1>GPT Masal Yazar</h1>
+        <input type="text" id="story_title" placeholder="Masal Başlığı">
+        <select id="gpt_type">
+            <option value="Base">Base</option>
+            <option value="Medium">Medium</option>
+        </select>
+        <button id="write_story">Masal Yaz</button>
+        <div id='spinner' class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        <textarea id="story_text" readonly  spellcheck="false" ></textarea>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    width: 100%;
+    font-family: "Poetsen One", sans-serif;
+    background-color: #CCFFCC;
+}
+.container {
+    min-height: 100%;
+    width: 100%;
+}
+
+#left_animals {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: 50%;
+    width: 25%;
+}
+
+#right_animals {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    height: 50%;
+    width: 25%;
+}
+
+#left_animals img,
+#right_animals img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.container_Mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+    color: #551C39;
+    font-size: 3em;
+}
+#write_story {
+    padding: 10px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+    border: #16F7AF 2px solid;
+    background-color: #16F763;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#write_story:hover {
+    background-color: #16F7AF;
+    transform: scale(1.1);
+}
+#story_title {
+    padding: 5px;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    width: 400px;
+    height: 40px;
+    border: #16F3F7 2px solid;
+    border-radius: 10px;
+}
+
+#story_title:hover {
+    border: #551C39 2px solid;
+}
+.lds-ring {
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: #16F7AF;
+}
+
+#spinner {
+    display: none;
+}
+#story_text {
+    display: none;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    width: 600px;
+    height: 300px;
+    border: #16F3F7 2px solid;
+    border-radius: 10px;
+}
+
+#gpt_type {
+    padding: 5px;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    border: #16F3F7 2px solid;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#gpt_type:hover {
+    border: #551C39 2px solid;
+}
+
+
+
+
+.lds-ring,
+.lds-ring div {
+  box-sizing: border-box;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid currentColor;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: currentColor transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
